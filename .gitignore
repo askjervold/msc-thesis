@@ -1,0 +1,9 @@
+# Ignore auto-generated files and the generated pdf
+main.*
+*.log
+
+# Include the main .tex file
+!main.tex
+
+# Ignore the generated template pdf
+template.pdf
