@@ -1,2 +1,2 @@
-# msc-app
-The application used in my MSc thesis
+# msc-thesis
+The thesis for my Master of Science degree
