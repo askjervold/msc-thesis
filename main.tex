@@ -104,8 +104,25 @@
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-\todo{This page should hold the abstract.}
+\todo{This page should hold the abstract, which should be a short summary of the paper.}
 
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	PREFACE PAGE
+%----------------------------------------------------------------------------------------
+
+\addtotoc{Preface}
+\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+\thispagestyle{empty}
+
+\begin{center}
+	\bigskip
+	{\huge{\textit{Preface}} \par}
+	\bigskip
+
+	\todo{This page should hold the preface, with acknowledgements etc.}
+\end{center}
 \clearpage % Start a new page
 
 %----------------------------------------------------------------------------------------
@@ -128,9 +145,13 @@
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-%\input{Chapters/Chapter1}
-%\input{Chapters/Chapter2} 
-%\input{Chapters/Chapter3}
+\input{Chapters/1-introduction}
+\input{Chapters/2-prestudy} 
+\input{Chapters/3-player-study-intro}
+\input{Chapters/4-player-study-success-factors}
+\input{Chapters/5-player-study-health-effects}
+\input{Chapters/6-discussion}
+\input{Chapters/7-conclusion}
 
 %----------------------------------------------------------------------------------------
 %  THESIS CONTENT - APPENDICES
