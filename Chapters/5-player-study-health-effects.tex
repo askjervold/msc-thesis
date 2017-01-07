@@ -35,7 +35,48 @@ This section presents the results for the player survey questions related to Res
 	\end{tabular}
 \end{table}
 
-Respondents were also asked what activities lead to the increase in their physical activity, if they had become more physically active. Table \ref{tbl:physical-activity-sources} shows the number of respondents for each activity out of 1828 respondents who had an increase in physical activity.
+Where Table \ref{tbl:physical-activity-before-and-after} showed the number of respondents in each time range before and after Pokémon GO, Table \ref{tbl:physical-activity-changed-category} shows the number and portion of respondents who remained in their category, went up one or more categories, or down one or more categories. This is a good indicator of how many respondents became more or less physically active, but will not be exact as some players became more active within the same range while others became less active within the same range. \todo{Should this paragraph and table be in analysis?}
+
+\begin{table}[h]
+	\centering
+	\caption{How many respondents changed physical activity categories?}
+	\label{tbl:physical-activity-changed-category}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{Initial category} & \textbf{Increased} & \textbf{Stable} & \textbf{Decreased}\\
+		\hline\hline
+		30 minutes or less	& 372	& 23	& 0\\
+		& 94\%	& 6\%	& 0\%\\\hline
+		An hour or less		& 276	& 44	& 4\\
+		& 85\%	& 14\%	& 1\%\\\hline
+		2 hours or less		& 321	& 44	& 6\\
+		& 84\%	& 15\%	& 1\%\\\hline
+		4 hours or less		& 332	& 136	& 9\\
+		& 70\%	& 28\%	& 2\%\\\hline
+		8 hours or less		& 220	& 166	& 8\\
+		& 56\%	& 42\%	& 2\%\\\hline
+		12 hours or less	& 59	& 65	& 8\\
+		& 45\%	& 49\%	& 6\%\\\hline
+		20 hours or less	& 25	& 32	& 4\\
+		& 41\%	& 52\%	& 7\%\\\hline
+		More than 20 hours	& 0		& 23	& 3\\
+		& 0\%	& 88\%	& 12\%\\\hline
+		\hline
+		Total				& 1605	& 546	& 42\\
+		& 73\%	& 25\%	& 2\%\\\hline
+	\end{tabular}
+\end{table}
+
+Figure \ref{fig:change-in-physical-activity} shows the change in physical activity relative to previous activity. The X-axis show weekly physical activity before Pokémon GO, while the Y-axis shows weekly physical activity after they started playing Pokémon GO, with both axes ranging from \emph{Less than 30 minutes} to \emph{More than 20 hours}. The green cells are players who increased their physical activity, while red cells are players who became less physically active after they started playing. Darker shades signify a larger difference, while the white cells indicate no change. \todo{Should this paragraph and figure be in analysis?}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figures/change-in-physical-activity-table-colors}
+	\caption{Change in physical activity with Pokémon GO}
+	\label{fig:change-in-physical-activity}
+\end{figure}
+
+Respondents were also asked what activities lead to the increase in their physical activity, if they had become more physically active. Table \ref{tbl:physical-activity-sources} shows the number of respondents for each option out of 1823 respondents who reported an increase in physical activity.
 
 \begin{table}[h]
 	\centering
@@ -44,26 +85,71 @@ Respondents were also asked what activities lead to the increase in their physic
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\textbf{Detours} & \textbf{Errands} & \textbf{Pokéhunting} & \textbf{Other}\\\hline\hline
-		1136 & 636 & 1576 & 99\\
+		1136 & 636 & 1576 & 89\\
 		62\% & 35\% & 86\% & 5\%\\\hline
 	\end{tabular}
 \end{table}
 
-\todo{Explain activities here, mention some "Other" activities, and people who reported N/A etc}
+It should be noted that 31 of these respondents (less than 2 \%) also chose the \emph{Not applicable} option, but it is uncertain what the implication of this is, given that they also selected other options. 25 of these 31 chose the same category for activity before and after, but because they are ranges it is still possible that they have increased activity within that range. The 6 remaining of those 31 reported more physical activity after Pokémon GO than before, so we can safely ignore the \emph{Not applicable} choice in their case. \todo{Should this be in Section \ref{sec:problems-with-survey} instead?}
+
+The three categories \emph{Detours}, \emph{Errands} and \emph{Pokéhunting} were further explained in the question's options, see Appendix \ref{appendix:survey} \todo{(so I assume I don't have to repeat them here? Or should I?)}. Common examples of other activities leading to an increase in physical activity were players with dogs who walked them longer and more frequently to get in more play time or distance for their eggs, players who would walk during their breaks at work instead of sitting down, and players who went for longer or more frequent runs than previously. Many players who knew they should be going for walks but previously wouldn't have, used Pokémon GO as a motivation to get outside and move around. Others found they enjoyed moving more and were motivated to start more rigorous exercise, while some even learned how to ride a bicycle so they could play more efficiently. \todo{Should I mention the respondents who said they increased physical activity for reasons unrelated to Pokémon GO? If so, here or in Section \ref{sec:problems-with-survey}?}
 
 \section{Analysis of Results for Change in Physical Activity}
 
-\begin{figure}[h]
+The results were overwhelmingly positive. As seen in Table \ref{tbl:physical-activity-changed-category}, 73 \%, nearly three out of every four respondents, increased their physical activity enough to move up at least one category in physical activity after Pokémon GO compared to before.
+
+\begin{table}[h]
 	\centering
-	\includegraphics{Figures/change-in-physical-activity-table-colors}
-	\caption{Change in physical activity with Pokémon GO}
-\end{figure}
+	\caption{How many respondents increased physical activity by multiple categories?}
+	\label{tbl:physical-activity-increased-multiple-categories}
+	\begin{tabular}{|l|c|c|c|c|c|}
+		\hline
+		\textbf{Initial category} & \textbf{\( \geq2 \)} & \textbf{\( \geq3 \)} & \textbf{\( \geq4 \)}	& \textbf{\( \geq5 \)} & \textbf{\( \geq6 \)}\\
+		\hline\hline
+		30 minutes or less	& 317	& 203	& 103	& 51	& 25\\
+							& 80\%	& 51\%	& 26\%	& 13\%	& 6\%\\\hline
+		An hour or less		& 185	& 82	& 36	& 14	& 4\\
+							& 57\%	& 25\%	& 11\%	& 4\%	& 1\%\\\hline
+		2 hours or less		& 155	& 75	& 40	& 20	& n/a\\
+							& 40\%	& 20\%	& 10\%	& 5\%	&\\\hline
+		4 hours or less		& 116	& 49	& 24	& n/a	& n/a\\
+							& 24\%	& 10\%	& 5\%	&		&\\\hline
+		8 hours or less		& 72	& 15	& n/a	& n/a	& n/a\\
+							& 18\%	& 4\%	& 		&		&\\\hline
+		12 hours or less	& 12	& n/a	& n/a	& n/a	& n/a\\
+							& 9\%	& 		&		&		&\\\hline
+		\hline
+		Total				& 857	& 424	& 203	& 85	& 29\\
+							& 39\%	& 19\%	& 9\%	& 4\%	& 1\%\\\hline
+	\end{tabular}
+\end{table}
 
-\section{Benefits}
+\begin{table}[h]
+	\centering
+	\caption{How many categories on average did players increase physical activity?}
+	\label{tbl:physical-activity-average-categories-increased}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\textbf{Initial category} & \textbf{Only increased} & \textbf{All}\\
+		\hline\hline
+		30 minutes or less	& 2.91	& 2.74\\
+		An hour or less		& 2.16	& 1.83\\
+		2 hours or less		& 1.90	& 1,57\\
+		4 hours or less		& 1.57	& 1.06\\
+		8 hours or less		& 1.40	& 0.75\\
+		12 hours or less	& 1.20	& 0.45\\
+		20 hours or less	& 1.00	& 0.23\\
+		More than 20 hours	& n/a	& -0.27\\
+		\hline
+		Total				& 2.00	& 1.43\\\hline
+	\end{tabular}
+\end{table}
 
-\todo{Increased physical activity, weight loss and general feeling of wellness, skipping unhealthy activities}
+%\section{Benefits}
 
-\section{Neglect and Negative Behavior}
+%\todo{Increased physical activity, weight loss and general feeling of wellness, skipping unhealthy activities}
+
+%\section{Neglect and Negative Behavior}
 
 
 % Chapter
