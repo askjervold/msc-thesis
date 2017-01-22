@@ -50,6 +50,38 @@
 	}%
 }
 
+% Allow writing a description on Part pages
+\usepackage{etoolbox}
+\usepackage{blindtext}
+
+\makeatletter
+
+\let\LaTeXStandardPart\part%
+\newcommand{\unstarredpart@@noopt}[1]{%
+	\unstarredpart@@opt[#1]{#1}%
+}%
+
+\newcommand{\unstarredpart@@opt}[2][]{%
+	\cleardoublepage% (For clearing content before!!!)
+	\begingroup%
+	\let\newpage\relax%
+	\LaTeXStandardPart[#1]{#2}%
+	\endgroup%
+}%
+
+\newcommand{\starredpart}[1]{%
+	\LaTeXStandardPart*{#1}%
+}%
+
+\newcommand{\unstarredpart}{%
+	\@ifnextchar[{\unstarredpart@@opt}{\unstarredpart@@noopt}%
+}%
+
+\renewcommand{\part}{%
+	\@ifstar{\starredpart}{\unstarredpart}%
+}%
+% end Part-fix
+
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{tabularx}
@@ -173,19 +205,25 @@
 % Uncomment the lines as you write the chapters
 
 \part{Introduction and Method}
-This part gives an introduction to the purpose and motivation for the project. It also describes the research goals and questions for the project and how we aim to find the answers. \todo{Figure out a way to make this page look better, or preferably be on the previous page}
+\begin{center}
+	This part gives an introduction to the purpose and motivation for the project. It also describes the research goals and questions for the project and how we aim to find the answers.
+\end{center}
 
 \label{part:intro}
 \input{Chapters/1-introduction}
 
 \part{Literature Study}
-This part looks at previous literature to create a basis for the research done in the project. It also looks at existing similar games and provides a more in-depth look on Pokémon GO, and a cursory look at the Pokémon franchise in general.
+\begin{center}
+	This part looks at previous literature to create a basis for the research done in the project. It also looks at existing similar games and provides a more in-depth look on Pokémon GO, and a cursory look at the Pokémon franchise in general.
+\end{center}
 
 \label{part:literature-study}
 \input{Chapters/2-prestudy} 
 
 \part{Player Study}
-This part presents the player study that was performed and the data it resulted in, with an analysis of the collected results.
+\begin{center}
+	This part presents the player study that was performed and the data it resulted in, with an analysis of the collected results.	
+\end{center}
 
 \label{part:player-study}
 \input{Chapters/3-player-study-intro}
@@ -193,7 +231,9 @@ This part presents the player study that was performed and the data it resulted 
 \input{Chapters/5-player-study-health-effects}
 
 \part{Discussion and Conclusion}
-The final part wraps up the contents of the paper, discussing issues with the player study and presenting a conclusion for the project. It also provides some thoughts for possible future work on the subject.
+\begin{center}
+	The final part wraps up the contents of the paper, discussing issues with the player study and presenting a conclusion for the project. It also provides some thoughts for possible future work on the subject.
+\end{center}
 
 \label{part:discussion-and-conclusion}
 \input{Chapters/6-discussion}
