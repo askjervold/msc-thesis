@@ -296,11 +296,11 @@ Because a large part of the player base naturally would be located in cities, it
 \label{sec:cheaters-analysis}
 Only a little over 2 \% of respondents listed cheaters and the difficulty of catching up and competing as a reason to quit. This is likely because most of the game can still be played in spite of cheaters and people who have been playing more than you. The only affected aspect of the game are gyms, as that is currently the only place where players interact with each other inside the game itself. However, in the area where it does matter, it is clear that cheaters are significant problem. While not all gyms are being targeted by these cheaters, in some popular areas players are finding it impossible to hold a gym for more than a few minutes, even in the middle of the night, as high level trainers suddenly show up in the game to claim the gym and fill it with powerful Pokémon, despite there being no one else around. Perhaps the best example of this problem is that within a few hours of the game's release in Brazil, many gyms were already filled with level 30 trainers and their nigh unbeatable Pokémon. For reference, the total amount of experience points needed to reach level 30 is 2 000 000 (two million), while catching a Pokémon nets 100 experience points, making the feat of one player reaching level 30 within less than a day of release impossible. With all nearby gyms full of these trainers, Brazilian players were not thrilled.
 
-Niantic made multiple changes throughout the year in an attempt to make it more difficult for cheaters, in addition to banning known and suspected cheaters' accounts, but because letting a bot play for you requires minimal effort, they keep creating new accounts. For those who want to play the game competitively but are unwilling to cheat, better solutions are needed. \todo{Make some suggestions here, e.g. show time Pokémon was added to gym}
+Niantic made multiple changes throughout the year in an attempt to make it more difficult for cheaters, in addition to banning known and suspected cheaters' accounts, but because letting a bot play for you requires minimal effort, they keep creating new accounts. For those who want to play the game competitively but are unwilling to cheat, better solutions are needed. One change that could help catch cheaters, or at the very least limit the amount of damage that they can do, would be to show the time at which a Pokémon was added to a gym. This would allow cheaters who spoof their GPS location to place Pokémon in multiple gyms in a short time to be caught, as one could estimate the required time to transport from one gym to the next, and if the time between placing Pokémon in distant gyms is too large, the spoofing could be uncovered. Combining a screenshot of the time a Pokémon was placed in a gym with a timestamped photo of the area could also help prove that there was no one physically around to place the Pokémon, allowing people to report players who steal gyms in front of them while not physically present.
 
 \subsection{The grind}
 \label{sec:quitting-reasons-the-grind}
-Over 7 \% of players who quit the game found the game to be too repetitive, while almost 7 \% were less motivated to play because of the difficulty of progression. These two categories combined make up the more than 14 \% who complained about the \emph{grind} \todo{(one sentence explaining what the grind is)} the game turned into. Starting at level 20, the number of experience points (\emph{XP}) needed to progress to the next level increases rapidly. Figure \ref{fig:experience-per-level} shows the required experience to reach each level along with the total accumulated experience so far for levels 18 and up.
+Over 7 \% of players who quit the game found the game to be too repetitive, while almost 7 \% were less motivated to play because of the difficulty of progression. These two categories combined make up the more than 14 \% who complained about the \emph{grind} - the feeling and boredom of repeating the same menial tasks over and over - that the game turned into. Starting at level 20, the number of experience points (\emph{XP}) needed to progress to the next level increases rapidly. Figure \ref{fig:experience-per-level} shows the required experience to reach each level along with the total accumulated experience so far for levels 18 and up.
 
 \begin{figure}[h]
 	\centering
@@ -464,12 +464,22 @@ The latter, mobile data usage, seems unavoidable. Pokémon are spawned server si
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3in]{Figures/pokestop-no-photo}
-	\caption{A Pokéstop with no photo loaded}
-	\label{fig:blank-pokestop}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[height=3in]{Figures/pokestop-no-photo}
+		\caption{A Pokéstop with no photo loaded}
+		\label{fig:blank-pokestop}
+	\end{subfigure}
+	~
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[height=3in]{Figures/pogo-no-root}
+		\caption{The message greeting players with rooted smart phones}
+		\label{fig:no-root}
+	\end{subfigure}
 \end{figure}
 
-The restriction of rooted devices was an attempt to hinder cheaters. Unfortunately, as discussed in Section \ref{sec:cheaters-analysis}, it failed to solve the problem. What it did not fail to do was alienate players who at some point had rooted their device for reasons unrelated to Pokémon GO and were playing the game legitimately. These players were now unable to play the game, while the desired effect of stopping cheaters from spoofing their location was not achieved. Reversing the change now may not bring back the players who (were forced to) quit because of this, but it shows that Niantic is listening to the community and lets new players with rooted devices start playing and the alienated players can choose to return if they wish.
+The restriction of rooted devices was an attempt to hinder cheaters. Unfortunately, as discussed in Section \ref{sec:cheaters-analysis}, it failed to solve the problem. What it did not fail to do was alienate players who at some point had rooted their device for reasons unrelated to Pokémon GO and were playing the game legitimately, but were greeted by the message in Figure \ref{fig:no-root}. These players were now unable to play the game, while the desired effect of stopping cheaters from spoofing their location was not achieved. Reversing the change now may not bring back the players who (were forced to) quit because of this, but it shows that Niantic is listening to the community and lets new players with rooted devices start playing and the alienated players can choose to return if they wish.
 
 The largest portion of complaints regarding technical requirements is the battery drain and the need to always have the screen turned on. Niantic has provided three partial solutions to this issue: the in-game \emph{Battery Saver} mode, the \emph{Pokémon GO Plus} and an app for the Apple Watch. When active, the in-game Battery Saver mode dims the screen and stops rendering the game while your phone is facing downwards, but does little else. The Pokémon GO Plus is a Bluetooth-connected accessory that lets you (attempt to) catch Pokémon and spin Pokéstops as well as track distance without having the app open. The app for the Apple Watch lets you track distance and spin Pokéstops, and notifies you of Pokémon that spawn within catch radius, but requires that you open the app to catch anything.
 
