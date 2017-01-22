@@ -182,7 +182,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Success Factors of a Mainstream AR Game and Its Effect on Society} % Your thesis title - this is used in the title and abstract
+\thesistitle{Pokémon GO: Success Factors and Health Effects} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Alf Inge \textsc{Wang}} % You supervisor's name - this is used in the title page
 \supervisorurl{http://www.ntnu.edu/employees/alfw} % URL to the supervisor's page at the institution
@@ -257,7 +257,7 @@
       \smallskip
       {\LARGE \authornames \par}
       \vfill
-      {\large A thesis submitted in partial fulfillment for the \par}
+      {\large A thesis submitted in fulfillment for the \par}
       {\large degree of \degreename \par}
       \bigskip
       \bigskip
