@@ -33,6 +33,23 @@
 \hypersetup{urlcolor=black, colorlinks=true} % Colors hyperlinks black
 \title{\ttitle} % Defines the thesis title
 
+\usepackage{newunicodechar}
+
+\newunicodechar{￥}{\textyen}
+\DeclareTextCommandDefault{\textyen}{%
+	\vphantom{Y}%
+	{\ooalign{Y\cr\hidewidth\yenbars\hidewidth\cr}}%
+}
+
+\newcommand{\yenbars}{%
+	\vbox{
+		\hrule height.1ex width.4em
+		\kern.15ex
+		\hrule height.1ex width.4em
+		\kern.3ex
+	}%
+}
+
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{tabularx}
